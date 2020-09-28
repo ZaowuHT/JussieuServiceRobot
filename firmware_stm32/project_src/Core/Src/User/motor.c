@@ -140,6 +140,10 @@ void Motor_SetPWM(uint8_t _index, int32_t _value)
 		_rev = 1;
 	}
 	TIM_OC_InitTypeDef sConfigOC = {0};
+	sConfigOC.OCMode = TIM_OCMODE_PWM1;
+	sConfigOC.Pulse = _value;
+	sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+	sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 	if (_index == MOTOR_RIGHT)
 	{
 		if (_value == 0)
@@ -157,10 +161,6 @@ void Motor_SetPWM(uint8_t _index, int32_t _value)
 			System_GPIO_Write(MOTOR_R_A_GROUP, MOTOR_R_A_GPIO, LOW);
 			System_GPIO_Write(MOTOR_R_B_GROUP, MOTOR_R_B_GPIO, HIGH);
 		}
-		sConfigOC.OCMode = TIM_OCMODE_PWM1;
-		sConfigOC.Pulse = _value;
-		sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-		sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 		HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1);
 		HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 	}
@@ -181,10 +181,6 @@ void Motor_SetPWM(uint8_t _index, int32_t _value)
 			System_GPIO_Write(MOTOR_L_A_GROUP, MOTOR_L_A_GPIO, HIGH);
 			System_GPIO_Write(MOTOR_L_B_GROUP, MOTOR_L_B_GPIO, LOW);
 		}
-		sConfigOC.OCMode = TIM_OCMODE_PWM1;
-		sConfigOC.Pulse = _value;
-		sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-		sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
 		HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_4);
 		HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
 	}

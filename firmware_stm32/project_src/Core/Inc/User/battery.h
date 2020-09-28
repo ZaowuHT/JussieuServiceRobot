@@ -9,11 +9,11 @@
 #define BATT_FULL_LEVEL 12.1f
 #define BATT_LOW_LEVEL 11.1f
 #define BATT_K_VOL 6.4f
-#define BATT_K_PERCENT 100.0
+#define BATT_K_PERCENT 100.0f
 #define BATT_B_PERCENT 1110
 
-#define BATT_ADC_REF 3300.0f
-#define BATT_ADC_FULL_REF 1.9f
+#define BATT_ADC_REF 3.3f
+#define BATT_ADC_FULL_REF 1.8f
 #define BATT_SAMPLE_PERIOD 5000
 #define BATT_ADC_RESOLU 4096.0f
 

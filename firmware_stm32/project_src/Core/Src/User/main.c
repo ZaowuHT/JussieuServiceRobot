@@ -17,8 +17,8 @@ int main(void)
 	// 硬件外设初始化
 	Host_Init();
 	Motor_Init();
-	Servo_Init();
 	Beep_Init();
+	Servo_Init();
 	Battery_Init();
 	Sonar_Init();
 	Watchdog_Init();

@@ -1,6 +1,5 @@
 #include "system.h"
 
-// 设置系统时钟
 void System_Clock_Config(void)
 {
 	RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -32,7 +31,6 @@ void System_Clock_Config(void)
 	HAL_NVIC_SetPriority(PendSV_IRQn, 15, 0);
 }
 
-// 设置GPIO时钟
 void System_GPIO_CLK_Config(GPIO_TypeDef *_group)
 {
 	if (_group == GPIOA)
@@ -77,7 +75,6 @@ void System_GPIO_CLK_Config(GPIO_TypeDef *_group)
 	}
 }
 
-// 初始化普通GPIO
 void System_GPIO_Init(GPIO_TypeDef *_group, uint32_t _pin, uint32_t _mode, uint32_t _pull, uint32_t _speed)
 {
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -95,7 +92,6 @@ void System_GPIO_Init(GPIO_TypeDef *_group, uint32_t _pin, uint32_t _mode, uint3
 		System_GPIO_Write(_group, _pin, LOW);
 }
 
-// 初始化复用GPIO
 void System_GPIO_Alt_Init(GPIO_TypeDef *_group, uint32_t _pin, uint32_t _mode, uint32_t _pull, uint32_t _speed, uint32_t _alt)
 {
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -114,13 +110,11 @@ void System_GPIO_Alt_Init(GPIO_TypeDef *_group, uint32_t _pin, uint32_t _mode, u
 		System_GPIO_Write(_group, _pin, LOW);
 }
 
-// GPIO写入电平
 void System_GPIO_Write(GPIO_TypeDef *_group, uint32_t _pin, uint8_t _level)
 {
 	HAL_GPIO_WritePin(_group, _pin, (GPIO_PinState)_level);
 }
 
-// GPIO读取电平
 uint8_t System_GPIO_Read(GPIO_TypeDef *_group, uint32_t _pin)
 {
 	return (uint8_t)HAL_GPIO_ReadPin(_group, _pin);

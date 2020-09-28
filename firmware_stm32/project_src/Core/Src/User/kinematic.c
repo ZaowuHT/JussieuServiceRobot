@@ -45,14 +45,18 @@ void Kinematic_UpdateDisplacement(void)
 		(robotMotorData[MOTOR_RIGHT].encoderCountPeriod * PI * 2 * KINEMATIC_WHEEL_RADIUS) / MOTOR_PPR;
 	float _dyaw = (_rightDisplacement - _leftDisplacement) / (2 * KINEMATIC_CHASSIS_RADIUS);
 	robotDisplacement.displacementX = ((_rightDisplacement + _leftDisplacement) / 2) * cos(_dyaw);
-	robotDisplacement.displacementX = ((_rightDisplacement + _leftDisplacement) / 2) * sin(_dyaw);
+	robotDisplacement.displacementY = ((_rightDisplacement + _leftDisplacement) / 2) * sin(_dyaw);
 	robotDisplacement.displacementYaw = _dyaw;
 	osMutexRelease(motorDataMutexHandle);
 }
 
 void Kinematic_ClearDisplacement(void)
 {
+	osMutexAcquire(motorDataMutexHandle, osWaitForever);
 	robotDisplacement.displacementX = 0;
 	robotDisplacement.displacementY = 0;
 	robotDisplacement.displacementYaw = 0;
+	robotMotorData[MOTOR_LEFT].encoderCountPeriod =  0;
+	robotMotorData[MOTOR_RIGHT].encoderCountPeriod =  0;
+	osMutexRelease(motorDataMutexHandle);
 }

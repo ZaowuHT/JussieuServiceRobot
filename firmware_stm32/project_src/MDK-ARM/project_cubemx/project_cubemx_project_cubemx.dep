@@ -86,7 +86,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
 I (..\Core\Inc\Lib\stm32f4xx_it.h)(0x5F31F82E)
 I (..\Core\Inc\User\sonar.h)(0x5F71BD0A)
 I (..\Core\Inc\User\slamware.h)(0x5F71C882)
-F (..\Core\Src\User\main.c)(0x5F71C964)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\main.o --omf_browse project_cubemx\main.crf --depend project_cubemx\main.d)
+F (..\Core\Src\User\main.c)(0x5F71F8AA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\main.o --omf_browse project_cubemx\main.crf --depend project_cubemx\main.d)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
 I (..\Core\Inc\Lib\stm32f4xx_hal_conf.h)(0x5F2CF0F4)
@@ -135,18 +135,18 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-I (..\Core\Inc\User\motor.h)(0x5F71151F)
+I (..\Core\Inc\User\motor.h)(0x5F71FE73)
 I (..\Core\Inc\User\host.h)(0x5F71AC5F)
 I (..\Core\Inc\User\kinematic.h)(0x5F71C917)
 I (..\Core\Inc\User\streambuilder.h)(0x5F71D16D)
 I (..\Core\Inc\User\servo.h)(0x5F719E47)
-I (..\Core\Inc\User\battery.h)(0x5F71B061)
+I (..\Core\Inc\User\battery.h)(0x5F71F946)
 I (..\Core\Inc\User\beep.h)(0x5F71A7D2)
 I (..\Core\Inc\User\slamware.h)(0x5F71C882)
 I (..\Core\Inc\User\sonar.h)(0x5F71BD0A)
 I (..\Core\Inc\User\observer.h)(0x5F71A3E7)
 I (..\Core\Inc\User\watchdog.h)(0x5F71AAA9)
-F (..\Core\Src\User\system.c)(0x5F71160E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\system.o --omf_browse project_cubemx\system.crf --depend project_cubemx\system.d)
+F (..\Core\Src\User\system.c)(0x5F71E5AF)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\system.o --omf_browse project_cubemx\system.crf --depend project_cubemx\system.d)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
 I (..\Core\Inc\Lib\stm32f4xx_hal_conf.h)(0x5F2CF0F4)
@@ -195,7 +195,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-F (..\Core\Src\User\host.c)(0x5F71B3B5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\host.o --omf_browse project_cubemx\host.crf --depend project_cubemx\host.d)
+F (..\Core\Src\User\host.c)(0x5F71F58D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\host.o --omf_browse project_cubemx\host.crf --depend project_cubemx\host.d)
 I (..\Core\Inc\User\host.h)(0x5F71AC5F)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
@@ -246,15 +246,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
 I (..\Core\Inc\User\kinematic.h)(0x5F71C917)
-I (..\Core\Inc\User\motor.h)(0x5F71151F)
+I (..\Core\Inc\User\motor.h)(0x5F71FE73)
 I (..\Core\Inc\User\streambuilder.h)(0x5F71D16D)
 I (..\Core\Inc\User\servo.h)(0x5F719E47)
-I (..\Core\Inc\User\battery.h)(0x5F71B061)
+I (..\Core\Inc\User\battery.h)(0x5F71F946)
 I (..\Core\Inc\User\beep.h)(0x5F71A7D2)
 I (..\Core\Inc\User\slamware.h)(0x5F71C882)
 I (..\Core\Inc\User\sonar.h)(0x5F71BD0A)
-F (..\Core\Src\User\motor.c)(0x5F71A0CD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\motor.o --omf_browse project_cubemx\motor.crf --depend project_cubemx\motor.d)
-I (..\Core\Inc\User\motor.h)(0x5F71151F)
+F (..\Core\Src\User\motor.c)(0x5F71F1AB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\motor.o --omf_browse project_cubemx\motor.crf --depend project_cubemx\motor.d)
+I (..\Core\Inc\User\motor.h)(0x5F71FE73)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
 I (..\Core\Inc\Lib\stm32f4xx_hal_conf.h)(0x5F2CF0F4)
@@ -303,7 +303,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-F (..\Core\Src\User\observer.c)(0x5F71C96C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\observer.o --omf_browse project_cubemx\observer.crf --depend project_cubemx\observer.d)
+F (..\Core\Src\User\observer.c)(0x5F71FDBC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\observer.o --omf_browse project_cubemx\observer.crf --depend project_cubemx\observer.d)
 I (..\Core\Inc\User\observer.h)(0x5F71A3E7)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
@@ -353,17 +353,17 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-I (..\Core\Inc\User\battery.h)(0x5F71B061)
+I (..\Core\Inc\User\battery.h)(0x5F71F946)
 I (..\Core\Inc\User\beep.h)(0x5F71A7D2)
 I (..\Core\Inc\User\host.h)(0x5F71AC5F)
 I (..\Core\Inc\User\kinematic.h)(0x5F71C917)
-I (..\Core\Inc\User\motor.h)(0x5F71151F)
+I (..\Core\Inc\User\motor.h)(0x5F71FE73)
 I (..\Core\Inc\User\streambuilder.h)(0x5F71D16D)
 I (..\Core\Inc\User\servo.h)(0x5F719E47)
 I (..\Core\Inc\User\slamware.h)(0x5F71C882)
 I (..\Core\Inc\User\sonar.h)(0x5F71BD0A)
 I (..\Core\Inc\User\watchdog.h)(0x5F71AAA9)
-F (..\Core\Src\User\servo.c)(0x5F71B3B8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\servo.o --omf_browse project_cubemx\servo.crf --depend project_cubemx\servo.d)
+F (..\Core\Src\User\servo.c)(0x5F71F5A7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\servo.o --omf_browse project_cubemx\servo.crf --depend project_cubemx\servo.d)
 I (..\Core\Inc\User\servo.h)(0x5F719E47)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
@@ -463,7 +463,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-F (..\Core\Src\User\watchdog.c)(0x5F71BE62)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\watchdog.o --omf_browse project_cubemx\watchdog.crf --depend project_cubemx\watchdog.d)
+F (..\Core\Src\User\watchdog.c)(0x5F71F583)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\watchdog.o --omf_browse project_cubemx\watchdog.crf --depend project_cubemx\watchdog.d)
 I (..\Core\Inc\User\watchdog.h)(0x5F71AAA9)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
@@ -513,8 +513,8 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-F (..\Core\Src\User\battery.c)(0x5F71B721)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\battery.o --omf_browse project_cubemx\battery.crf --depend project_cubemx\battery.d)
-I (..\Core\Inc\User\battery.h)(0x5F71B061)
+F (..\Core\Src\User\battery.c)(0x5F71FF14)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\battery.o --omf_browse project_cubemx\battery.crf --depend project_cubemx\battery.d)
+I (..\Core\Inc\User\battery.h)(0x5F71F946)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
 I (..\Core\Inc\Lib\stm32f4xx_hal_conf.h)(0x5F2CF0F4)
@@ -564,7 +564,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
 I (..\Core\Inc\User\beep.h)(0x5F71A7D2)
-F (..\Core\Src\User\sonar.c)(0x5F71C903)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\sonar.o --omf_browse project_cubemx\sonar.crf --depend project_cubemx\sonar.d)
+F (..\Core\Src\User\sonar.c)(0x5F71FD2D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\sonar.o --omf_browse project_cubemx\sonar.crf --depend project_cubemx\sonar.d)
 I (..\Core\Inc\User\sonar.h)(0x5F71BD0A)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
@@ -614,7 +614,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-F (..\Core\Src\User\kinematic.c)(0x5F71CAE4)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\kinematic.o --omf_browse project_cubemx\kinematic.crf --depend project_cubemx\kinematic.d)
+F (..\Core\Src\User\kinematic.c)(0x5F71FF10)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\kinematic.o --omf_browse project_cubemx\kinematic.crf --depend project_cubemx\kinematic.d)
 I (..\Core\Inc\User\kinematic.h)(0x5F71C917)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)
@@ -664,8 +664,8 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5EC9D
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEBCE42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEBCE36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBCE42)
-I (..\Core\Inc\User\motor.h)(0x5F71151F)
-F (..\Core\Src\User\slamware.c)(0x5F71C893)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\slamware.o --omf_browse project_cubemx\slamware.crf --depend project_cubemx\slamware.d)
+I (..\Core\Inc\User\motor.h)(0x5F71FE73)
+F (..\Core\Src\User\slamware.c)(0x5F71F34F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ..\Core\Inc\Lib -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc\User-I.\RTE\_project_cubemx-IC:\Users\railw\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\railw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o project_cubemx\slamware.o --omf_browse project_cubemx\slamware.crf --depend project_cubemx\slamware.d)
 I (..\Core\Inc\User\slamware.h)(0x5F71C882)
 I (..\Core\Inc\User\system.h)(0x5F71A208)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5EC9D320)

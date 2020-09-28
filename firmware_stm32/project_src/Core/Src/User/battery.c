@@ -36,12 +36,12 @@ struct BatteryData batteryData;
 void Battery_Init(void)
 {
 	Battery_ADC_Init();
-	HAL_ADC_Start(&hadc1);
 	Battery_UpdateData();
 }
 
 void Battery_UpdateData(void)
 {
+	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, BATT_ADC_TIMEOUT);
 	if (HAL_IS_BIT_SET(HAL_ADC_GetState(&hadc1), HAL_ADC_STATE_REG_EOC))
 	{
@@ -49,7 +49,7 @@ void Battery_UpdateData(void)
 		batteryData.batteryVoltage = 
 			(batteryData.batteryVoltageRaw * BATT_ADC_REF / BATT_ADC_RESOLU) * BATT_K_VOL;
 		batteryData.batteryPercent = 
-			(int32_t) (batteryData.batteryVoltage * BATT_K_VOL - BATT_B_PERCENT);
+			(int32_t) (batteryData.batteryVoltage * BATT_K_PERCENT - BATT_B_PERCENT);
 		batteryData.batteryPercent = batteryData.batteryPercent > 100 ? 100 :
 			(batteryData.batteryPercent < 0 ? 0 : batteryData.batteryPercent);
 		batteryData.batteryState = 

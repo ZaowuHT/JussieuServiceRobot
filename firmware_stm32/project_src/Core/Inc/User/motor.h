@@ -47,7 +47,7 @@ struct MotorData
     int32_t targetSpeedPPS;
     int32_t encoderCountAbs;
     int32_t currentPWM;
-    uint32_t encoderCountPeriod;
+    int32_t encoderCountPeriod;
     int32_t lastError;
 };
 

@@ -18,9 +18,9 @@ void Servo_Init(void)
 	HAL_UART_Init(&huart1);
 
 	System_GPIO_Alt_Init(SERVO_TX_GPIO_GROUP, SERVO_TX_GPIO_ID,
-		GPIO_MODE_AF_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_VERY_HIGH, GPIO_AF7_USART2);
+		GPIO_MODE_AF_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_VERY_HIGH, GPIO_AF7_USART1);
 	System_GPIO_Alt_Init(SERVO_RX_GPIO_GROUP, SERVO_RX_GPIO_ID,
-		GPIO_MODE_AF_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_VERY_HIGH, GPIO_AF7_USART2);
+		GPIO_MODE_AF_PP, GPIO_NOPULL, GPIO_SPEED_FREQ_VERY_HIGH, GPIO_AF7_USART1);
 
     HAL_NVIC_SetPriority(USART1_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(USART1_IRQn);
@@ -29,7 +29,6 @@ void Servo_Init(void)
 	{
 		servoData[i] = SERVO_DEFAULT_ANGLE;
 		Servo_SendControlStream(i, SERVO_DEFAULT_ANGLE);
-		HAL_Delay(SERVO_ACTION_DURATION);
 	}
 }
 
@@ -65,7 +64,7 @@ osThreadId_t servoTaskHandle;
 const osThreadAttr_t servoTask_attributes = {
 	.name = "servoTask",
 	.priority = (osPriority_t) osPriorityHigh,
-	.stack_size = 256 * 4
+	.stack_size = 512 * 4
 };
 
 osMutexId_t servoStateMutexHandle;

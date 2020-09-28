@@ -113,12 +113,10 @@ void Sonar_DataHandler(uint8_t* dataStream)
 	}
 	else if (sonarState == SONAR_STATE_WAITPAYLOAD)
 	{
-		uint8_t _checksum = 0x00;
-		for (int i = 0; i < 2; i++)
-			_checksum += dataStream[i];
-		if ((_checksum & 0x00ff) == dataStream[3])
+		uint16_t _checksum = 
+			(dataStream[0] + dataStream[1] + dataStream[2]) & 0x00ff;
+		if (_checksum == dataStream[3])
 		{
-			sonarState = SONAR_STATE_WAITHEAD;
 			uint32_t _distance = dataStream[1] * 256 + dataStream[2];
 			osMessageQueuePut(sonarDataQueueHandle, &_distance, 0, 0);
 		}
@@ -158,11 +156,12 @@ void Sonar_Task(void *argument)
 	{
 		osMutexAcquire(sonarDataMutexHandle, osWaitForever);
 		Sonar_Multiplexer_SetChannel(sonarIter);
+		sonarState = SONAR_STATE_WAITHEAD;
 		HAL_UART_Receive_IT(&huart4, sonarRecieveBuffer, 1);
 		Sonar_SendByte(SONAR_TRIGGER);
 		osMessageQueueGet(sonarDataQueueHandle, &(sonarData[sonarIter]), 0, SONAR_TIMEOUT);
 		osMessageQueueReset(sonarDataQueueHandle);
-		sonarIter = sonarIter + 1 >= SONAR_CHANNEL ? 0 : sonarIter + 1;
+		sonarIter = sonarIter + 1 >= SONAR_NUMBER ? 0 : sonarIter + 1;
 		osMutexRelease(sonarDataMutexHandle);
 		osDelay(SONAR_REFRESH_DURATION);
 	}

@@ -32,7 +32,6 @@ void Observer_Task(void *argument)
 		Host_SendStream((uint8_t*) " ", 1);
 		Host_SendNumber((int32_t) robotDisplacement.displacementYaw);
 		Host_SendStream((uint8_t*) "\n", 1);
-		Kinematic_ClearDisplacement();
 
 		// Motor test
 		osMutexAcquire(motorDataMutexHandle, osWaitForever);
@@ -59,7 +58,7 @@ void Observer_Task(void *argument)
 		// Servo test
 		for (int i = 0; i < SERVO_NUMBER; i++)
 		{
-			_servoAngle = _servoAngle + 15 > 180 ? 180 : _servoAngle + 15;
+			_servoAngle = _servoAngle + 15 > 180 ? 0 : _servoAngle + 15;
 			Servo_SetAngle(i, _servoAngle);
 			osMutexAcquire(servoStateMutexHandle, osWaitForever);
 			Host_SendStream((uint8_t*) "Servo: ", 7);
@@ -71,8 +70,9 @@ void Observer_Task(void *argument)
 		}
 
 		// Beep test
-		_beepDuration = _beepDuration + 100 > 1000 ? 1000 : _beepDuration + 100;
+		_beepDuration = _beepDuration + 100 > 1000 ? 100 : _beepDuration + 100;
 		Beep_Start(_beepDuration);
+		Host_SendStream((uint8_t*) "Beep\n", 5);
 
 		// Battery test
 		osMutexAcquire(batteryDataMutexHandle, osWaitForever);
