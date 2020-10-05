@@ -136,7 +136,7 @@ void Motor_SetPWM(uint8_t _index, int32_t _value)
 		(_value < -1 * MOTOR_MAX_PWM ? -1 * MOTOR_MAX_PWM : _value);
 	if (_value < 0)
 	{
-		_value = -1 * _value;
+		_value = abs(_value);
 		_rev = 1;
 	}
 	TIM_OC_InitTypeDef sConfigOC = {0};

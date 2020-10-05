@@ -27,7 +27,7 @@ struct RobotDisplacement robotDisplacement;
 
 void Kinematic_SetSpeed(float speedX, float speedYaw)
 {
-	float _lineSpeed = speedYaw / KINEMATIC_CHASSIS_RADIUS;
+	float _lineSpeed = speedYaw * KINEMATIC_CHASSIS_RADIUS;
 	float _leftSpeed = speedX - _lineSpeed;
 	float _rightSpeed = speedX + _lineSpeed;
 	int32_t _leftSpeedPPS = (int32_t) (_leftSpeed * MOTOR_PPR / (PI * 2 * KINEMATIC_WHEEL_RADIUS));

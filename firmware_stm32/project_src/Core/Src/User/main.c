@@ -30,6 +30,7 @@ int main(void)
 	Battery_RunTask();
 	Sonar_RunTask();
 	Observer_RunTask();
+	Host_RunTask();
 
 	// 实时操作系统任务调度器启动
 	osKernelStart();

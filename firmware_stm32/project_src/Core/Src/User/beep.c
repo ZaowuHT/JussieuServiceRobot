@@ -10,10 +10,13 @@ void Beep_Init(void)
 
 void Beep_Start(uint32_t beepDuration)
 {
-	if (osMutexAcquire(beepStateMutexHandle, 0) == osOK)
+	if (beepDuration > 0)
 	{
-		osMessageQueuePut(beepDurationQueueHandle, &beepDuration, 0, 0);
-		osMutexRelease(beepStateMutexHandle);
+		if (osMutexAcquire(beepStateMutexHandle, 0) == osOK)
+		{
+			osMessageQueuePut(beepDurationQueueHandle, &beepDuration, 0, 0);
+			osMutexRelease(beepStateMutexHandle);
+		}
 	}
 }
 

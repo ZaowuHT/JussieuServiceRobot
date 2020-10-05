@@ -38,6 +38,7 @@
 // UART相关声明区域: UART4
 
 extern UART_HandleTypeDef huart4;
+extern DMA_HandleTypeDef hdma_uart4_rx;
 extern uint8_t sonarRecieveBuffer[SONAR_RECIEVE_BUFFER_SIZE];
 
 // 多路复用器相关声明区域
@@ -47,11 +48,15 @@ void Sonar_Multiplexer_SetChannel(uint8_t channelID);
 
 // 超声波传感器数据与方法声明区域
 
-typedef int32_t SonarData[SONAR_NUMBER];
+typedef uint32_t SonarData[SONAR_NUMBER];
 
 extern uint8_t sonarIter;
 extern uint8_t sonarState;
 extern SonarData sonarData;
+
+extern volatile uint16_t sonarLastDMAStreamSetLength;
+extern volatile uint16_t sonarCurrentDMAStreamLength;
+extern volatile uint16_t sonarFullStreamLength;
 
 void Sonar_Init(void);
 void Sonar_SendByte(uint8_t data);

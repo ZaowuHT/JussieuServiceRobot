@@ -58,6 +58,8 @@
 // USART相关声明区域: USART3
 
 extern UART_HandleTypeDef huart3;
+extern DMA_HandleTypeDef hdma_usart3_rx;
+extern DMA_HandleTypeDef hdma_usart3_tx;
 extern uint8_t slamwareRecieveBuffer[SLAMWARE_RECIEVE_BUFFER_SIZE];
 extern uint8_t slamwareSendBuffer[SLAMWARE_SEND_BUFFER_SIZE];
 

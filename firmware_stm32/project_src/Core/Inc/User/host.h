@@ -26,9 +26,8 @@
 
 #define HOST_STATE_DISCONNECTED 0
 #define HOST_STATE_CONNECTED 1
-#define HOST_STREAM_STATE_WAITFORHEAD 0
-#define HOST_STREAM_STATE_WAITFORLENGTH 1
-#define HOST_STREAM_STATE_WAITFORPAYLOAD 2
+#define HOST_STREAM_STATE_WAITFORMETA 0
+#define HOST_STREAM_STATE_WAITFORTERMINAL 1
 
 #define HOST_STREAM_HEAD 0x50
 #define HOST_STREAM_CONNECT_REQ 0x01
@@ -41,22 +40,24 @@
 #define HOST_STREAM_SONAR_REQ 0x07
 #define HOST_STREAM_BEEP_REQ 0x08
 
-#define HOST_STREAM_PTN_8 1
-#define HOST_STREAM_PTN_16 2
-#define HOST_STREAM_PTN_32 4
-
-#define HOST_COMMUNICATION_TIMEOUT 2000 
+#define HOST_COMMUNICATION_TIMEOUT 2000
 
 // USART相关声明区域: USART2
 
 extern UART_HandleTypeDef huart2;
+extern DMA_HandleTypeDef hdma_usart2_rx;
+extern DMA_HandleTypeDef hdma_usart2_tx;
 extern uint8_t hostRecieveBuffer[HOST_RECIEVE_BUFFER_SIZE];
-extern uint8_t hostSendBuffer[HOST_SEND_BUFFER_SIZE];
 
 // 上位机控制数据与方法声明区域
 
 extern uint8_t hostConnectionState;
 extern uint8_t hostStreamState;
+
+extern volatile uint16_t hostLastDMAStreamSetLength;
+extern volatile uint16_t hostCurrentDMAStreamLength;
+extern volatile uint16_t hostFullStreamLength;
+extern volatile uint16_t hostPayloadStreamLength;
 
 void Host_Init(void);
 void Host_SendByte(uint8_t data);
